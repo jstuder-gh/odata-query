@@ -287,6 +287,8 @@ function handleValue(value) {
         return value.value;
       case 'raw':
         return value.value;
+      case 'unescapedString':
+        return `'${value.value}'`;
     }
     return value;
   }
